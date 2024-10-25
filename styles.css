@@ -187,7 +187,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/SailorMoon.png");
+    url("images/SailorMoon.png");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -310,7 +310,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/il_1588xN.6176975321_ra4a.jpg");
+    url("images/product-images/il_1588xN.6176975321_ra4a.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -321,7 +321,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/il_1588xN.2544157560_kfno.jpg");
+    url("images/product-images/il_1588xN.2544157560_kfno.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -332,7 +332,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/il_1588xN.6220380563_pzq7.jpg");
+    url("images/product-images/il_1588xN.6220380563_pzq7.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -343,7 +343,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/blanket.jpg");
+    url("images/product-images/blanket.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -353,7 +353,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/cat-pj.jpg");
+    url("images/product-images/cat-pj.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
@@ -363,7 +363,7 @@ footer img {
       rgba(255, 255, 255, 0) 75%,
       rgba(0, 0, 0, 1) 102%
     ),
-    url("/images/product-images/heart-sticker.jpg");
+    url("images/product-images/heart-sticker.jpg");
   max-width: 100%;
   border-radius: 6px;
 }
