@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="char-body">
+    <header id="toggle">
+      <div id="navbar">
+        <div class="sailor-logo-header">
+          <img class="nav-pic" src="images/Sailor-Moon-Logo.png" />
+        </div>
+
+        <ul id="large-only-nav">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="index.html">Characters</a></li>
+          <li><a href="merch.html">Sailor Moon Merch</a></li>
+        </ul>
+
+        <div class="menu-icon-contain">
+          <div id="menu-button" class="menu-button">
+            <img src="/images/menu-item.png" />
+          </div>
+          <div id="close-menu-button"><img src="/images/cross.png" /></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mymenu" id="mymenu">
+      <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="index.html">Characters</a></li>
+        <li><a href="merch.html">Sailor Moon Merch</a></li>
+      </ul>
+      <div class="nav-image"><img src="/images/moon.png" /></div>
+    </nav>
+
+    <div class="color-section">
+      <h1>Sailor Moon Characters</h1>
+      <!--SEARCH BAR-->
+      <div class="form-container">
+        <form class="form">
+          <input
+            id="search"
+            type="text"
+            autocomplete="off"
+            class="input"
+            placeholder="Search..."
+          />
+        </form>
+      </div>
+
+      <div class="style-results-container">
+        <div class="results-container">
+          <ul class="results-list" id="list"></ul>
+        </div>
+      </div>
+    </div>
+    <div id="section2">
+      <div class="outer-card" id="img1" data-character="Sailor Moon">
+        <h4>Sailor Moon</h4>
+      </div>
+
+      <div class="outer-card" id="img2" data-character="Sailor Mars">
+        <h4>Sailor Mars</h4>
+      </div>
+
+      <div class="outer-card" id="img3" data-character="Sailor Venus">
+        <h4>Sailor Venus</h4>
+      </div>
+
+      <div class="outer-card" id="img4" data-character="Sailor Mercury">
+        <h4>Sailor Mercury</h4>
+      </div>
+
+      <div class="outer-card" id="img5" data-character="Sailor Jupiter">
+        <h4>Sailor Jupiter</h4>
+      </div>
+
+      <div class="outer-card" id="img6" data-character="Sailor Neptune">
+        <h4>Sailor Neptune</h4>
+      </div>
+
+      <div class="outer-card" id="img7" data-character="Sailor Uranus">
+        <h4>Sailor Uranus</h4>
+      </div>
+
+      <div class="outer-card" id="img8" data-character="Tuxedo Mask">
+        <h4>Tuxedo Mask</h4>
+      </div>
+
+      <div class="outer-card" id="img9" data-character="Zoisite">
+        <h4>Zoisite</h4>
+      </div>
+
+      <div class="outer-card" id="img10" data-character="Queen Serenity">
+        <h4>Queen Serenity</h4>
+      </div>
+
+      <div class="outer-card" id="img11" data-character="Molly Baker">
+        <h4>Molly Baker</h4>
+      </div>
+
+      <div class="outer-card" id="img12" data-character="Luna">
+        <h4>Luna</h4>
+      </div>
+    </div>
+    <footer>
+      <div id="footer-div">
+        <img
+          class="footer-pic"
+          src="https://1000logos.net/wp-content/uploads/2023/06/Sailor-Moon-Logo.png"
+        />
+        <a><p>Home</p></a>
+        <a><p>Characters</p></a>
+        <a><p>Other</p></a>
+      </div>
+      <img src="images/footer_image.jpeg" />
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="menutoggle.js"></script>
+  </body>
+</html>

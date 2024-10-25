@@ -1,0 +1,1078 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+iframe {
+  width: 100%;
+}
+
+#vid-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+
+#video-section {
+  background-color: #91a3e63e;
+}
+.menu-button img {
+  margin-right: 16px;
+}
+
+#close-menu-button img {
+  margin-right: 16px;
+}
+
+.video-item {
+  padding-bottom: 16px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  color: rgb(26, 26, 26);
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.p-describe {
+  color: rgb(26, 26, 26);
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 350;
+  line-height: 1.8;
+}
+
+#hero-section {
+  background-color: #e1e1e127;
+  padding-bottom: 58px;
+}
+
+#hero-section img {
+  height: auto;
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+}
+.color-section {
+  background-color: #e1e1e127;
+}
+#section2 {
+  background-color: #e1e1e127;
+  color: white;
+  display: flex;
+  padding: 14px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#section2 a {
+  color: white;
+  text-decoration: none;
+}
+#skyline-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+#bottom-skyline-container {
+  width: 100%;
+  height: auto;
+}
+
+#skyline-container button {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(64, 12, 81, 0.454);
+  padding: 16px;
+  border-radius: 22px;
+}
+
+.button-div {
+  padding: 0px 16px 16px 16px;
+}
+
+.master-container {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 1.5;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s;
+  overflow: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.grid-item.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.grid-item.flipped .back {
+  transform: rotateY(0);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid white 1px;
+}
+
+#skyline {
+  width: 100%;
+  display: block;
+}
+
+#footer-div {
+  background-color: #9ab6f7;
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+.footer-pic {
+  width: 100%;
+}
+
+#footer-div p {
+  padding-bottom: 16px;
+}
+
+/* Card Character Images */
+
+#img1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/SailorMoon.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailormars.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailorvenus.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailormercury.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailorjupiter.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img6 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailorneptune.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img7 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/sailoruranus.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img8 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/tuxedomask.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img9 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/zoisite.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img10 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/queenserenity.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img11 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/mollybaker.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img12 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("images/luna.png");
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Card Product Images */
+
+#img1-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/il_1588xN.6176975321_ra4a.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+#img2-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/il_1588xN.2544157560_kfno.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+#img3-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/il_1588xN.6220380563_pzq7.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+#img4-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/blanket.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img5-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/cat-pj.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+#img6-product {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(0, 0, 0, 1) 102%
+    ),
+    url("/images/product-images/heart-sticker.jpg");
+  max-width: 100%;
+  border-radius: 6px;
+}
+/*Input*/
+
+input {
+  width: 100%;
+  height: 2.5em;
+  padding-left: 1em;
+  background-color: #e1e1e127;
+  border: 1.5px solid rgb(82, 82, 82);
+  border-radius: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8394d1;
+}
+
+.style-results-container {
+  padding: 0 16px 0 16px;
+}
+
+.results-container {
+  padding-top: 0.5em;
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.results-container ul li {
+  list-style: none;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  border-radius: 2px;
+  color: rgb(26, 26, 26);
+  padding-bottom: 0.5em;
+  background-color: #8394d11c;
+}
+
+#section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.outer-card {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  flex: 1 1 calc(50% - 1em);
+  height: 15em;
+  margin-bottom: 1em;
+}
+
+.footer-pic {
+  width: 30%; /* change to 100% when work on media quieres*/
+}
+
+#footer-div a {
+  color: rgb(20, 43, 68);
+}
+
+#mymenu {
+  background-color: #8394d1;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+.mymenu ul {
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mymenu li {
+  text-align: center;
+  padding: 1em;
+}
+
+#large-only-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  width: 100%;
+}
+
+#large-only-nav li {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 28px;
+}
+#large-only-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.nav-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mymenu a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+  color: white;
+  border: none;
+}
+
+#navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #91a4e6;
+  padding: 0.5em;
+  z-index: 1000;
+}
+
+.sailor-logo-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-icon-contain {
+  display: flex;
+  align-items: center;
+}
+
+.nav-pic {
+  width: 100%;
+  height: auto;
+}
+
+.menu-button img,
+#close-menu-button img {
+  width: 24px;
+  height: auto;
+  display: block;
+}
+
+/*Char Cards*/
+.character-card {
+  border: 3px solid #556089;
+  border-radius: 6px;
+  max-height: 100%;
+  overflow: hidden;
+}
+.char-card-spacing {
+  padding: 16px;
+}
+.top-color {
+  background-color: #556089;
+  border-radius: 1px 1px 0px 0px;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  text-align: center;
+}
+.top-color h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.character-image {
+  max-width: 100%;
+  height: auto;
+}
+.des-container {
+  padding: 28px;
+  font-size: 18px;
+  display: flex;
+  border-top: 1px solid rgb(200, 200, 200);
+}
+.character-description {
+  font-size: 16px;
+  color: #f1f1f1;
+  text-align: left;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #large-only-nav {
+    visibility: hidden;
+  }
+
+  #navbar {
+    width: 100%;
+    height: 72px;
+  }
+  .nav-pic {
+    width: 120px;
+  }
+
+  #skyline-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(64, 12, 81, 0.454);
+    padding: 16px;
+    border-radius: 32px;
+    border: solid white 1px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  input {
+    height: 3.5em;
+    border-radius: 26px;
+  }
+
+  .mymenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+
+  button {
+    min-width: 44px;
+    min-height: 44px;
+    color: white;
+    border: none;
+  }
+
+  h1 {
+    color: rgb(26, 26, 26);
+    padding: 30px 16px 20px 16px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  a,
+  p {
+    font-size: 16px;
+  }
+  li a {
+    font-size: 16px;
+  }
+
+  .top-color h2 {
+    font-size: 22px;
+  }
+  .des-container p {
+    font-size: 16px;
+  }
+  .outer-card {
+    flex: 1 1 calc(50% - 1em);
+    padding-left: 1em;
+    padding-top: 13em;
+  }
+  #character-image {
+    width: 34%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px 0 10px 0;
+  }
+  iframe {
+    height: 422px;
+  }
+  #vid-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    height: auto;
+  }
+  .footer-pic {
+    width: 16%;
+  }
+}
+
+@media (max-width: 532px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: red;
+  }
+  form {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #large-only-nav {
+    visibility: hidden;
+  }
+  li a {
+    font-size: 14px;
+  }
+  #navbar .sailor-logo-header {
+    width: 100%;
+  }
+
+  .nav-pic {
+    width: 120px;
+  }
+
+  #navbar {
+    width: 100%;
+    height: 72px;
+  }
+
+  .outer-card {
+    flex: 1 1 100%;
+    padding-left: 1em;
+    padding-top: 13em;
+  }
+  iframe {
+    height: 284px;
+  }
+  .footer-pic {
+    width: 16%;
+  }
+}
+
+/* Tablet Styles - Vertical */
+@media (min-width: 701px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-pic {
+    width: 120px;
+  }
+  #large-only-nav {
+    visibility: hidden;
+  }
+  #navbar {
+    width: 100%;
+    height: 72px;
+  }
+
+  #mymenu {
+    display: none;
+  }
+  #hero-section img {
+    width: 100%;
+  }
+
+  #skyline-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 52px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(64, 12, 81, 0.454);
+    padding: 16px;
+    border-radius: 32px;
+    border: solid white 1px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  input {
+    height: 3em;
+    border-radius: 28px;
+  }
+  form {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1 {
+    color: rgb(26, 26, 26);
+    padding: 30px 16px 20px 16px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  a,
+  p {
+    font-size: 16px;
+  }
+  li a {
+    font-size: 16px;
+  }
+  .outer-card {
+    padding-left: 1em;
+    padding-top: 13em;
+  }
+  #character-detail {
+    padding: 20px;
+  }
+  .top-color h2 {
+    font-size: 28px;
+  }
+  .des-container p {
+    font-size: 18px;
+  }
+  button {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #character-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px 0 10px 0;
+  }
+  .footer-pic {
+    width: 16%;
+  }
+}
+
+/* Tablet Styles/small desktop - Horizontal */
+@media (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #large-only-nav {
+    visibility: visible;
+  }
+  #navbar .menu-icon-contain {
+    visibility: hidden;
+  }
+  #navbar {
+    width: 100%;
+    height: 72px;
+  }
+  .nav-pic {
+    width: 120px;
+  }
+  #hero-section {
+    background-color: #e1e1e127;
+    padding-bottom: 58px;
+  }
+  form {
+    padding-left: 0px;
+  }
+  #hero-section img {
+    height: 600px;
+    width: 100%;
+  }
+
+  #skyline-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 68px;
+    width: 38%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(64, 12, 81, 0.454);
+    padding: 16px;
+    border-radius: 32px;
+    border: solid white 1px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  #first-content-home {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  #first-content-home-header {
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  input {
+    width: 60%;
+    height: 3em;
+    border-radius: 28px;
+  }
+
+  .results-container {
+    width: 60%;
+  }
+
+  .results-list {
+    font-size: 20px;
+  }
+
+  h1 {
+    color: rgb(26, 26, 26);
+    padding: 30px 16px 20px 0px;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  a,
+  p {
+    font-size: 20px;
+  }
+
+  li a {
+    font-size: 16px;
+  }
+  .color-section,
+  #section2 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .outer-card {
+    flex: 1 1 calc(33.33% - 1em);
+    padding-left: 1em;
+    padding-top: 13em;
+  }
+
+  .top-color h2 {
+    font-size: 28px;
+  }
+  .des-container p {
+    font-size: 18px;
+  }
+  .character-card {
+    border: 3px solid #556089;
+    border-radius: 6px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+  }
+
+  .desktop-style {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+  }
+
+  #character-image {
+    width: 28%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 10px 0 10px 0;
+  }
+
+  .des-container {
+    padding: 12px;
+    font-size: 18px;
+    border-top: 1px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .des-container p:first-child {
+    margin-bottom: 4px;
+  }
+
+  .character-description {
+    font-size: 16px;
+    color: #f1f1f1;
+    text-align: left;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .button-div {
+    margin: 0 8px;
+  }
+  .footer-pic {
+    width: 12%;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1500px) {
+  #large-only-nav {
+    visibility: visible;
+  }
+  #navbar {
+    width: 100%;
+    height: 88px;
+  }
+  .nav-pic {
+    width: 160px;
+  }
+
+  #navbar .menu-icon-contain {
+    visibility: hidden;
+  }
+  #mymenu {
+    background-color: #8394d1;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+  }
+
+  .mymenu ul {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #hero-section img {
+    height: 700px;
+    width: 100%;
+  }
+
+  #skyline-container button {
+    height: 68px;
+    width: 30%;
+    font-size: 20px;
+  }
+
+  h1 {
+    color: rgb(26, 26, 26);
+    padding: 30px 16px 20px 0px;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  a,
+  p {
+    font-size: 22px;
+  }
+
+  li a {
+    font-size: 18px;
+  }
+
+  .color-section,
+  #section2 {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+  .outer-card {
+    padding-left: 1em;
+    padding-top: 13em;
+    flex: 1 1 calc(25% - 1em);
+  }
+  .character-card {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .top-color h2 {
+    font-size: 32px;
+  }
+  .des-container p {
+    font-size: 20px;
+  }
+  #first-content-home {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+  #first-content-home-header {
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-pic {
+    width: 12%;
+  }
+}
