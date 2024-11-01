@@ -122,12 +122,13 @@ footer img {
   padding: 0px 16px 16px 16px;
   width: 100%;
   height: auto;
+  display: flex;
 }
 .view-more-button {
   width: 100%;
   height: auto;
   border-radius: 100px;
-  background-color: rgba(64, 12, 81, 0.454);
+  background-color: #556089;
   font-size: 45px;
 }
 .go-home-button {
@@ -135,9 +136,9 @@ footer img {
   height: auto;
   border-radius: 100px;
   background-color: #e1e1e127;
-  border: solid 1px red;
-  color: red;
-  font-size: 45px;
+  border: solid 1px #556089;
+  color: #556089;
+  font-size: 42px;
 }
 
 .master-container {
@@ -596,7 +597,7 @@ button {
 }
 .des-container {
   padding: 28px;
-  font-size: 18px;
+  font-size: 100px;
   display: flex;
   border-top: 1px solid rgb(200, 200, 200);
 }
@@ -610,7 +611,13 @@ button {
 
 
 
+
+
 @media (max-width: 700px) {
+  .view-more-button, .go-home-button {
+    font-size: 18px;
+  }
+  
   #skyline-container button {
     width: 280px;
     font-size: 16px;
@@ -646,8 +653,6 @@ button {
     height: 3.5em;
     border-radius: 26px;
   }
- 
-  
   h1 {
     color: rgb(26, 26, 26);
     padding: 30px 16px 20px 16px;
@@ -658,12 +663,11 @@ button {
   p {
     font-size: 16px;
   }
-  
   .top-color h2 {
     font-size: 22px;
   }
   .des-container p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .outer-card {
     flex: 1 1 calc(50% - 1em);
@@ -692,6 +696,12 @@ button {
 }
 /* Large Mobile Styles */
 @media (max-width: 500px) {
+  .des-container p {
+    font-size: 14px;
+  }
+  .view-more-button, .go-home-button {
+    font-size: 16px;
+  }
   #skyline-container button {
     width: 220px;
     font-size: 14px;
@@ -741,6 +751,12 @@ button {
 }
 /* Medium Mobile Styles */
 @media (max-width: 400px) {
+  .des-container p {
+    font-size: 14px;
+  }
+  .view-more-button, .go-home-button {
+    font-size: 16px;
+  }
   #skyline-container button {
     width: 250px;
     font-size: 14px;
@@ -768,6 +784,9 @@ button {
 }
 /* Small Mobile Styles */
 @media (max-width: 299px) {
+  .view-more-button, .go-home-button {
+    font-size: 14px;
+  }
   #skyline-container button {
     width: 190px;
     font-size: 12px;
@@ -795,6 +814,7 @@ button {
 }
 /* Mobile Styles */
 @media (max-width: 200px) {
+
   /* Styles for very small screens */
   #skyline-container button {
     width: 150px;
@@ -831,6 +851,12 @@ button {
 
 /* Tablet Styles - Vertical */
 @media (min-width: 701px) {
+  .des-container p {
+    font-size: 18px;
+  }
+  .view-more-button, .go-home-button {
+    font-size: 18px;
+  }
   
   #skyline-container button {
     width: 300px;
@@ -911,6 +937,13 @@ button {
 
 /* Tablet Styles/small desktop - Horizontal */
 @media (min-width: 1024px) {
+  .des-container p {
+    font-size: 18px;
+  }
+  .view-more-button, .go-home-button {
+    font-size: 20px;
+    
+  }
   #skyline-container button {
     width: 350px;
     font-size: 18px;
@@ -942,7 +975,7 @@ button {
   }
   #hero-section {
     background-color: #e1e1e127;
-    padding-bottom: 58px;
+    
   }
   form {
     padding-left: 0px;
@@ -957,10 +990,7 @@ button {
   }
 
   #first-content-home {
-    padding-top: 160px;
-    padding-bottom: 160px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 100px;
   }
   #first-content-home-header {
     text-align: left;
@@ -990,7 +1020,7 @@ button {
 
   a,
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   
@@ -1048,7 +1078,6 @@ button {
 
   .des-container {
     padding: 12px;
-    font-size: 18px;
     border-top: 1px solid rgb(200, 200, 200);
     display: flex;
     flex-direction: column;
@@ -1063,15 +1092,42 @@ button {
     color: #f1f1f1;
     text-align: left;
   }
-
-  
   .footer-pic {
     width: 12%;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 20px auto; 
+    max-width: 752px; 
+    width: 100%; 
+}
+
+.button-div {
+    padding: 0;
+    margin: 0 20px; 
+}
+
+.button-container button {
+    width: 100%;
+    padding: 10px; 
+}
 }
 
 /* Desktop Styles */
 @media (min-width: 1500px) {
+  .button-container {
+    max-width: 900px;   
+}
+  .des-container p {
+    font-size: 20px;
+  }
+  .view-more-button, .go-home-button {
+    font-size: 22px;
+  }
   #skyline-container button {
     width: 400px;
     height: 58px;
@@ -1119,7 +1175,7 @@ button {
   }
   a,
   p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   li a {
@@ -1148,10 +1204,7 @@ button {
     font-size: 20px;
   }
   #first-content-home {
-    padding-top: 160px;
-    padding-bottom: 160px;
-    padding-left: 220px;
-    padding-right: 220px;
+    padding: 100px;
   }
   #first-content-home-header {
     text-align: left;
@@ -1163,7 +1216,6 @@ button {
     width: 12%;
   }
 }
-
 
 
 @media (prefers-color-scheme: dark) {
@@ -1201,7 +1253,7 @@ button {
     background-position: center; /* Center the image */
   }
   #mymenu {
-    background-color: #010307;
+    background-color: rgb(22, 22, 22);
   }
   .input, h1, .p-describe {
     color: rgb(237, 237, 237);; /* Applies to all specified elements */
@@ -1226,6 +1278,24 @@ button {
   #dark-footer-pic {
     display: block;
   }
+
+  .view-more-button {
+    background-color: #556089;;
+  }
+  .go-home-button {
+    border: solid 1px white;
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+  
+  .char-card-spacing {
+    background-color: rgb(22, 22, 22);
+    color: white;
+  }
+  .button-container, body {
+    background-color: rgb(22, 22, 22);
+  }
+  
 }
 
 
