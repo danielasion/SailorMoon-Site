@@ -27,5 +27,13 @@ document.getElementById("menu-button").addEventListener("click", openView);
 closeMenu.addEventListener("click", closeView);
 
 function flipImage(element) {
-  element.classList.toggle("flipped");
+  const allItems = document.querySelectorAll('.grid-item');
+  allItems.forEach(item => {
+    if (item !== element) {
+      item.classList.remove('flipped');
+    }
+  });
+  element.classList.toggle('flipped');
 }
+
+

@@ -12,18 +12,29 @@ img, iframe {
 body {
   overflow-x: hidden;
 }
-
 iframe {
   width: 100%;
 }
 
 #vid-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); 
+  padding: 16px;
   width: 100%;
   height: auto;
-  padding: 16px;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+#video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #video-section {
   background-color: #91a3e63e;
@@ -176,6 +187,11 @@ footer img {
 
 .back {
   transform: rotateY(180deg);
+}
+.back p {
+  color: black;
+  font-size: 18px;
+  padding: 18px;
 }
 
 .grid-item.flipped .front {
@@ -404,6 +420,14 @@ footer img {
 }
 /*Input*/
 
+/* Adjust grid layout for mobile */
+@media (max-width: 768px) {
+  .outer-card {
+      width: 90%; /* 1 per row on mobile */
+  }
+}
+
+
 input {
   width: 100%;
   height: 2.5em;
@@ -459,7 +483,7 @@ input:focus {
 }
 
 .footer-pic {
-  width: 30%; /* change to 100% when work on media quieres*/
+  width: 30%;
 }
 
 #footer-div a {
@@ -607,13 +631,19 @@ button {
   text-align: left;
 }
 
-
-
-
-
-
-
 @media (max-width: 700px) {
+  .back p {
+    font-size: 12px;
+  }
+  .results-container ul li {
+    font-size: 16px;
+  }
+  .input {
+    font-size: 16px;
+  }
+  #vid-grid-container {
+    grid-template-columns: 1fr; 
+  }
   .view-more-button, .go-home-button {
     font-size: 18px;
   }
@@ -696,6 +726,12 @@ button {
 }
 /* Large Mobile Styles */
 @media (max-width: 500px) {
+  .back p {
+    font-size: 10px;
+  }
+  #vid-grid-container {
+    grid-template-columns: 1fr; 
+  }
   .des-container p {
     font-size: 14px;
   }
@@ -751,6 +787,17 @@ button {
 }
 /* Medium Mobile Styles */
 @media (max-width: 400px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .back p {
+    font-size: 14px;
+  }
+ 
+  #vid-grid-container {
+    grid-template-columns: 1fr; 
+  }
   .des-container p {
     font-size: 14px;
   }
@@ -773,7 +820,7 @@ button {
     max-width: 60%;
   }
   .outer-card {
-    flex: 1 1 100% !important; /* Change to full width for mobile */
+    flex: 1 1 100% !important; 
   }
   .sailor-logo-header {
     width: 100%;
@@ -784,6 +831,10 @@ button {
 }
 /* Small Mobile Styles */
 @media (max-width: 299px) {
+
+  .back p {
+    font-size: 10px;
+  }
   .view-more-button, .go-home-button {
     font-size: 14px;
   }
@@ -804,7 +855,7 @@ button {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    flex: 1 1 100%; /* Change this line */
+    flex: 1 1 100%; 
     height: 15em;
     margin-bottom: 1em;
   } 
@@ -814,8 +865,10 @@ button {
 }
 /* Mobile Styles */
 @media (max-width: 200px) {
+  .back p {
+    font-size: 10px;
+  }
 
-  /* Styles for very small screens */
   #skyline-container button {
     width: 150px;
     font-size: 12px;
@@ -849,8 +902,18 @@ button {
 }
 
 
+
 /* Tablet Styles - Vertical */
 @media (min-width: 701px) {
+  #vid-grid-container {
+    grid-template-columns: 1fr; 
+  }
+  .results-container ul li {
+    font-size: 16px;
+  }
+  .input {
+    font-size: 16px;
+  }
   .des-container p {
     font-size: 18px;
   }
@@ -930,19 +993,35 @@ button {
   .footer-pic {
     width: 16%;
   }
-  
+  .back p {
+    font-size: 14px;
+  }
 }
 
+@media (min-width: 800px) {
+  #vid-grid-container {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    width: 100%;
+  
+  }
+  .back p {
+    font-size: 14px;
+  }
+}
 
 
 /* Tablet Styles/small desktop - Horizontal */
 @media (min-width: 1024px) {
+  .back p {
+    font-size: 16px;
+  }
   .des-container p {
     font-size: 18px;
   }
   .view-more-button, .go-home-button {
     font-size: 20px;
-    
   }
   #skyline-container button {
     width: 350px;
@@ -984,11 +1063,9 @@ button {
     height: 600px;
     width: 100%;
   }
-
   .mymenu {
     visibility: hidden;
   }
-
   #first-content-home {
     padding: 100px;
   }
@@ -998,32 +1075,30 @@ button {
     padding-right: 16px;
   }
   input {
-    width: 60%;
+    width: 70%;
     height: 3em;
     border-radius: 28px;
   }
-
   .results-container {
-    width: 60%;
-  }
+    width: 100%;
+    padding-left: 0px;
 
-  .results-list {
-    font-size: 20px;
   }
-
+  .style-results-container {
+    width: 70%;
+    border-radius: 5px;
+  }
+ 
   h1 {
     color: rgb(26, 26, 26);
     padding: 30px 16px 20px 0px;
     font-weight: 500;
     font-size: 32px;
   }
-
   a,
   p {
     font-size: 18px;
   }
-
-  
   .color-section,
   #section2 {
     padding-left: 50px;
@@ -1077,7 +1152,7 @@ button {
   }
 
   .des-container {
-    padding: 12px;
+    padding: 20px;
     border-top: 1px solid rgb(200, 200, 200);
     display: flex;
     flex-direction: column;
@@ -1086,9 +1161,12 @@ button {
   .des-container p:first-child {
     margin-bottom: 4px;
   }
+  .des-container p {
+    padding-top: 6px;
+  }
 
   .character-description {
-    font-size: 16px;
+    font-size: 18px;
     color: #f1f1f1;
     text-align: left;
   }
@@ -1115,10 +1193,35 @@ button {
     width: 100%;
     padding: 10px; 
 }
+
+#vid-grid-container {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 70px;
+}
+
 }
 
 /* Desktop Styles */
 @media (min-width: 1500px) {
+  .back p {
+    font-size: 18px;
+  }
+  .input {
+    font-size: 18px;
+  }
+  .results-container ul li {
+    font-size: 18px;
+  }
+  #vid-grid-container {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 80px;
+  }
   .button-container {
     max-width: 900px;   
 }
@@ -1146,27 +1249,22 @@ button {
   .nav-pic {
     width: 160px;
   }
-
   #navbar .menu-icon-contain {
     visibility: hidden;
   }
   #mymenu {
     display: hidden;
   }
-
   .mymenu ul {
     flex-grow: 1;
     padding: 0;
     margin: 0;
     list-style: none;
   }
-
   #hero-section img {
     height: 700px;
     width: 100%;
   }
-
-
   h1 {
     color: rgb(26, 26, 26);
     padding: 30px 16px 20px 0px;
@@ -1177,11 +1275,9 @@ button {
   p {
     font-size: 20px;
   }
-
   li a {
     font-size: 18px;
   }
-
   .color-section,
   #section2 {
     padding-left: 220px;
@@ -1211,7 +1307,6 @@ button {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .footer-pic {
     width: 12%;
   }
@@ -1220,13 +1315,13 @@ button {
 
 @media (prefers-color-scheme: dark) {
   #skyline-container::before{
-    content: ''; /* Necessary for the pseudo-element */
-    position: absolute; /* Position it over the image */
+    content: ''; 
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(33, 29, 35, 0.312); /* Red overlay with 50% opacity */
+    background-color: rgba(33, 29, 35, 0.312); 
   }
   
   #skyline-container button {
@@ -1240,23 +1335,22 @@ button {
     border: solid black 2px;
   }
   .content {
-    position: relative; /* Create a stacking context for content */
-    z-index: 2; /* Ensure content appears above the overlay */
-    text-align: center; /* Center the text */
+    position: relative; 
+    z-index: 2; 
+    text-align: center; 
 }
 
   #navbar{
     background-color: #141414;
-
-    background-image: url('https://c.pxhere.com/photos/39/83/astronomy_constellation_dark_galaxy_night_night_sky_orion_space-1563485.jpg!d'); /* Replace with your image path */
-    background-size: cover; /* Cover the entire nav area */
-    background-position: center; /* Center the image */
+    background-image: url('https://c.pxhere.com/photos/39/83/astronomy_constellation_dark_galaxy_night_night_sky_orion_space-1563485.jpg!d'); 
+    background-size: cover; 
+    background-position: center;
   }
   #mymenu {
     background-color: rgb(22, 22, 22);
   }
   .input, h1, .p-describe {
-    color: rgb(237, 237, 237);; /* Applies to all specified elements */
+    color: rgb(237, 237, 237);; 
   }s
   .input {
     border: solid 1px rgb(237, 237, 237);
@@ -1294,6 +1388,18 @@ button {
   }
   .button-container, body {
     background-color: rgb(22, 22, 22);
+  }
+  .back p {
+    color: whitesmoke; 
+  }
+  
+  .results-container {
+    background-color: rgb(22, 22, 22);
+  }
+  
+  .results-container ul li {
+    color: whitesmoke;
+    background-color: rgb(32, 32, 32);
   }
   
 }
